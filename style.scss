@@ -70,7 +70,7 @@ $accent-color : #1eb71e;
 
     .nav-links {
         ul {
-            @include flex(0, row);
+            @include flex(10px, row);
 
             li {
                 list-style: none;
@@ -82,6 +82,7 @@ $accent-color : #1eb71e;
                     font-size: 1rem;
                     padding: 10px;
                     border-radius: 4px;
+                    transition: all 500ms;
 
                     &:hover {
                         background-color: $accent-color;

@@ -40,7 +40,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0;
+  gap: 10px;
   flex-direction: row;
 }
 .navbar .nav-links ul li {
@@ -53,6 +53,7 @@ html {
   font-size: 1rem;
   padding: 10px;
   border-radius: 4px;
+  transition: all 500ms;
 }
 .navbar .nav-links ul li a:hover {
   background-color: #1eb71e;
