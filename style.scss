@@ -89,6 +89,50 @@ $accent-color : #1eb71e;
                         color: white;
                     }
                 }
+                .hamburger-btn {
+                    background-color: transparent;
+                    color: black;
+                    border: none;
+                    outline: none;
+                    font-size: 32px;
+                    cursor: pointer;
+                    display: none;
+                }
+            }
+        }
+        .side-bar{
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            width: 250px;
+            z-index: 4;
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            box-shadow: -10px 0px 10px rgba(0,0,0,0.1);
+            display: none;
+            flex-direction: column;
+            justify-content: flex-start;
+            row-gap: 15px;
+            li{
+                width: 100%;
+                align-self: center;
+                a{
+                    width: 100%;
+                    display: block;
+                    border-radius: 0;
+                }
+                .hamburger-btn-close{
+                    background-color: transparent;
+                    color: black;
+                    border: none;
+                    outline: none;
+                    font-size: 32px;
+                    cursor: pointer;
+                    position: relative;
+                    left: 10px;
+                    top: 10px;
+                }
             }
         }
     }
@@ -103,6 +147,7 @@ $accent-color : #1eb71e;
     height: 100vh;
     @include flex;
     justify-content: flex-start;
+    scroll-margin-top: 100px;
 
     .main-content {
         padding: 0 40px;
@@ -126,6 +171,7 @@ $accent-color : #1eb71e;
 }
 
 .shop {
+    scroll-margin-top: 20px;
     .heading {
         @include section-heading;
     }
@@ -185,6 +231,7 @@ $accent-color : #1eb71e;
 
 .new-collection {
     @extend .shop;
+    scroll-margin-top: 20px;
 
     .heading-2 {
         @extend .heading;
@@ -206,6 +253,7 @@ $accent-color : #1eb71e;
     padding: 50px;
     padding-bottom: 40px;
     gap: 50px;
+    scroll-margin-top: 20px;
 
     img {
         border-radius: 8px;
@@ -228,6 +276,7 @@ $accent-color : #1eb71e;
 
 .brands {
     @include flex(0, column);
+    scroll-margin-top: 50px;
 
     .heading-3 {
         @include section-heading;
@@ -254,6 +303,7 @@ $accent-color : #1eb71e;
     background-color: #283442;
     @include flex(25px, column);
     padding: 30px;
+    scroll-margin-top: 10px;
 
     h2 {
         color: white;
@@ -352,19 +402,14 @@ $accent-color : #1eb71e;
     .navbar {
         .nav-links {
             ul {
-                flex-direction: column;
-
                 li {
                     a {
-                        padding: 0;
-                        border-radius: 0;
-                        transition: none;
-
-                        &:hover {
-                            color: black;
-                            border-bottom: 2px solid $accent-color;
-                            background-color: transparent;
-                        }
+                        display: none;
+                    }
+                    .hamburger-btn {
+                        position: relative;
+                        left: 60px;
+                        display: block;
                     }
                 }
             }

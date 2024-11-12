@@ -59,6 +59,51 @@ html {
   background-color: #1eb71e;
   color: white;
 }
+.navbar .nav-links ul li .hamburger-btn {
+  background-color: transparent;
+  color: black;
+  border: none;
+  outline: none;
+  font-size: 32px;
+  cursor: pointer;
+  display: none;
+}
+.navbar .nav-links .side-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 4;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 15px;
+}
+.navbar .nav-links .side-bar li {
+  width: 100%;
+  align-self: center;
+}
+.navbar .nav-links .side-bar li a {
+  width: 100%;
+  display: block;
+  border-radius: 0;
+}
+.navbar .nav-links .side-bar li .hamburger-btn-close {
+  background-color: transparent;
+  color: black;
+  border: none;
+  outline: none;
+  font-size: 32px;
+  cursor: pointer;
+  position: relative;
+  left: 10px;
+  top: 10px;
+}
 
 .main {
   background-image: url("/assets/background.jpg");
@@ -73,6 +118,7 @@ html {
   gap: 0;
   flex-direction: row;
   justify-content: flex-start;
+  scroll-margin-top: 100px;
 }
 .main .main-content {
   padding: 0 40px;
@@ -98,6 +144,9 @@ html {
   text-decoration: none;
 }
 
+.shop, .new-collection {
+  scroll-margin-top: 20px;
+}
 .shop .heading, .new-collection .heading, .new-collection .heading-2 {
   padding: 20px 0;
   display: flex;
@@ -173,6 +222,9 @@ html {
   left: 14px;
 }
 
+.new-collection {
+  scroll-margin-top: 20px;
+}
 .new-collection .new-furniture .new-furni-box {
   border-top-left-radius: 4px;
 }
@@ -183,6 +235,7 @@ html {
   padding: 50px;
   padding-bottom: 40px;
   gap: 50px;
+  scroll-margin-top: 20px;
 }
 .about img {
   border-radius: 8px;
@@ -217,6 +270,7 @@ html {
   align-items: center;
   gap: 0;
   flex-direction: column;
+  scroll-margin-top: 50px;
 }
 .brands .heading-3 {
   padding: 20px 0;
@@ -255,6 +309,7 @@ html {
   gap: 25px;
   flex-direction: column;
   padding: 30px;
+  scroll-margin-top: 10px;
 }
 .contact h2 {
   color: white;
@@ -338,18 +393,13 @@ html {
 }
 
 @media (max-width: 780px) {
-  .navbar .nav-links ul {
-    flex-direction: column;
-  }
   .navbar .nav-links ul li a {
-    padding: 0;
-    border-radius: 0;
-    transition: none;
+    display: none;
   }
-  .navbar .nav-links ul li a:hover {
-    color: black;
-    border-bottom: 2px solid #1eb71e;
-    background-color: transparent;
+  .navbar .nav-links ul li .hamburger-btn {
+    position: relative;
+    left: 60px;
+    display: block;
   }
   .about img {
     width: 85vw;
