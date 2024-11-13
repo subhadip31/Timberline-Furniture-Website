@@ -25,6 +25,9 @@ html {
   position: sticky;
   top: 0;
   background-color: white;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .navbar .logo a {
   font-weight: bold;
@@ -119,6 +122,9 @@ html {
   flex-direction: row;
   justify-content: flex-start;
   scroll-margin-top: 100px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .main .main-content {
   padding: 0 40px;
@@ -146,6 +152,9 @@ html {
 
 .shop, .new-collection {
   scroll-margin-top: 20px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .shop .heading, .new-collection .heading, .new-collection .heading-2 {
   padding: 20px 0;
@@ -224,6 +233,9 @@ html {
 
 .new-collection {
   scroll-margin-top: 20px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .new-collection .new-furniture .new-furni-box {
   border-top-left-radius: 4px;
@@ -236,6 +248,9 @@ html {
   padding-bottom: 40px;
   gap: 50px;
   scroll-margin-top: 20px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .about img {
   border-radius: 8px;
@@ -271,6 +286,9 @@ html {
   gap: 0;
   flex-direction: column;
   scroll-margin-top: 50px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .brands .heading-3 {
   padding: 20px 0;
@@ -310,6 +328,9 @@ html {
   flex-direction: column;
   padding: 30px;
   scroll-margin-top: 10px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .contact h2 {
   color: white;
@@ -370,6 +391,9 @@ html {
 
 .footer {
   padding: 30px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .footer a {
   font-weight: bold;

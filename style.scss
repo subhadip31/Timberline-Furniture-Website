@@ -44,6 +44,12 @@ $accent-color : #1eb71e;
     }
 }
 
+@mixin section-max-width{
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .navbar {
     @include flex;
     justify-content: space-between;
@@ -53,6 +59,7 @@ $accent-color : #1eb71e;
     position: sticky;
     top: 0;
     background-color: white;
+    @include section-max-width;
 
     .logo {
         a {
@@ -148,6 +155,7 @@ $accent-color : #1eb71e;
     @include flex;
     justify-content: flex-start;
     scroll-margin-top: 100px;
+    @include section-max-width;
 
     .main-content {
         padding: 0 40px;
@@ -172,6 +180,7 @@ $accent-color : #1eb71e;
 
 .shop {
     scroll-margin-top: 20px;
+    @include section-max-width;
     .heading {
         @include section-heading;
     }
@@ -232,6 +241,7 @@ $accent-color : #1eb71e;
 .new-collection {
     @extend .shop;
     scroll-margin-top: 20px;
+    @include section-max-width;
 
     .heading-2 {
         @extend .heading;
@@ -254,6 +264,7 @@ $accent-color : #1eb71e;
     padding-bottom: 40px;
     gap: 50px;
     scroll-margin-top: 20px;
+    @include section-max-width;
 
     img {
         border-radius: 8px;
@@ -277,6 +288,7 @@ $accent-color : #1eb71e;
 .brands {
     @include flex(0, column);
     scroll-margin-top: 50px;
+    @include section-max-width;
 
     .heading-3 {
         @include section-heading;
@@ -304,6 +316,7 @@ $accent-color : #1eb71e;
     @include flex(25px, column);
     padding: 30px;
     scroll-margin-top: 10px;
+    @include section-max-width;
 
     h2 {
         color: white;
@@ -369,6 +382,7 @@ $accent-color : #1eb71e;
 
 .footer {
     padding: 30px;
+    @include section-max-width;
 
     a {
         font-weight: bold;
